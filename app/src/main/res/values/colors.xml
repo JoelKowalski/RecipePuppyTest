@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRIMARY COLORS -->
+    <color name="colorPrimary">#305c9f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#CDDC39</color>
+    <color name="cardColor">#f2f2f2</color>
+
+
+    <color name="defaultBackground">#F1F6F6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightPrimary">#C5CAE9</color>
+
+
+    <!-- GREY COLORS -->
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="sectionListColor">#737373</color>
+    <!-- BLACK COLORS -->
+    <color name="commonBlack">#000000</color>
+
+
+
+</resources>

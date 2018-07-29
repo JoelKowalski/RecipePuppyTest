@@ -1,0 +1,223 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- COMMON HEADER -->
+    <style name="header_back_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:src">@drawable/back_button</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="header_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="header_separator">
+        <item name="android:layout_below">@+id/back_image</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
+
+    <style name="recipe_container_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name=" android:orientation">horizontal</item>
+    </style>
+
+    <style name="recipe_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/commonBlack</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="recipe_fragment_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="loading_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:indeterminateTint">@color/colorAccent</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="edittext_search_recipe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawableLeft">@android:drawable/ic_menu_search</item>
+        <item name="android:hint">@string/hint</item>
+        <item name="android:textColor">@color/commonBlack</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:background">@color/defaultBackground</item>
+    </style>
+
+    <style name="no_result_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@+id/input_et</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="no_data_contaier">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@+id/input_et</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="icon_void_search">
+        <item name="  android:layout_width">150dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/icon_plato</item>
+    </style>
+
+    <style name="title_void_search">
+        <item name="android:layout_below">@+id/dish_icon</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/no_data_container_title</item>
+    </style>
+
+    <style name="text_content_void_search">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/lightPrimary</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/no_data_container</item>
+    </style>
+
+    <style name="recipe_recycler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_below">@+id/input_et</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="card_recipe_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@drawable/common_border</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="circle_recipe_container">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/placeholder</item>
+    </style>
+
+    <style name="title_subtitle_recipe_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@+id/circleView</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="title_recipe_text">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_toEndOf">@+id/circleView</item>
+        <item name="android:textColor">@color/commonBlack</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_toRightOf">@+id/circleView</item>
+    </style>
+    <style name="ingredients_text_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ingredient_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/item_name</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:text">@string/ingredients</item>
+        <item name="android:layout_toRightOf">@+id/circleView</item>
+    </style>
+
+    <style name="ingredient_info_image">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/info_icon</item>
+    </style>
+
+    <style name="web_link_image">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/web</item>
+        <item name="android:background">@drawable/web_border</item>
+    </style>
+
+    <style name="ingredient_recycler">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@drawable/ingredients_border</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/back_image"
+        style="@style/header_back_button"/>
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/header_text"/>
+
+    <View
+        android:id="@+id/header_separator"
+        style="@style/header_separator" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecipePuppyFinder</string>
+    <string name="no_data_container_title">¿Tienes Hambre?</string>
+    <string name="no_data_container">Escribe tus ingredientes y encuentra instantaneamente recetas de los sitios de cocina más populares</string>
+    <string name="hint">Introduce tu receta</string>
+    <string name="headertext">Listado de recetas</string>
+    <string name="ingredients">Ingredientes</string>
+
+
+</resources>

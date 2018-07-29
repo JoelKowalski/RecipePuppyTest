@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <include layout="@layout/common_header" android:id="@+id/header"/>
+
+    <RelativeLayout
+        style="@style/recipe_fragment_container">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="@style/loading_container"/>
+
+        <EditText
+            android:id="@+id/input_et"
+            style="@style/edittext_search_recipe"/>
+
+
+        <RelativeLayout
+            android:id="@+id/no_data_container"
+            style="@style/no_data_contaier">
+            <ImageView
+                android:id="@+id/dish_icon"
+                style="@style/icon_void_search"/>
+            <TextView
+                android:id="@+id/title"
+                style="@style/title_void_search"/>
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/text_content_void_search"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/recipe_recycler"/>
+
+    </RelativeLayout>
+</LinearLayout>

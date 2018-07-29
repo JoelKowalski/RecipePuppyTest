@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/recipe_container"
+        style="@style/card_recipe_container">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleView"
+            style="@style/circle_recipe_container"/>
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            style="@style/title_subtitle_recipe_container">
+            <TextView
+                android:id="@+id/item_name"
+                style="@style/title_recipe_text"/>
+            <LinearLayout
+                style="@style/ingredients_text_container">
+                <TextView
+                    style="@style/ingredient_text" />
+                <ImageView
+                    style="@style/ingredient_info_image"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/recipe_link"
+            style="@style/web_link_image"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ingredients_recycler_view"
+        style="@style/ingredient_recycler"/>
+</LinearLayout>
